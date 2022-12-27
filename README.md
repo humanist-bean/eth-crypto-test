@@ -1,6 +1,8 @@
 # eth-crypto-test
 ### This repository has some code from No Cash Value LLC and Tree Cloud Product's 2021 NFTKEY project. Specifically, it contains the code from 0_eth_crypto_test, which pertains to testing whether it is possible to encrypt and decrypt messages using ethereum's public and private keys and also send said messages over the blockchain as transaction data.  
-### It is indeed possible, as this code can demonstrate on a ganache virtual blockchain. This has also been tested on the Rinkeby (now deprecated) blockchain using the same code in December of 2021, so hypothetically there is no reason why it should not be possible to do the same thing on the actual Ethereum blockchain. 
+### It is indeed possible, as this code can demonstrate. In fact, we actually tested this on the actual Ethereum blockchain in September of 2021 by adding a message encrypted with my public key in the "input" section of a NFT transaction, and then decrypting the message using my private key and the code in this repository. This is the link to that ethereum transaction: https://etherscan.io/tx/0x8d71b9e84f76dc2c4ee6200307cce6e6e750ac55e039bc3117728187f5194d58
+### So just to be clear, it is possible to extract an Ethereum user's public key from one of their transactions, use this public key to encrypt a message, put that message in a transaction's "input" section, and then decrypt the message after it has been posted to the blockchain using the private key associated with the public key used to encrypt the message. The code in this repository does all that. 
+
 
 ## HOW TO SECTION (copied from guide.txt)
 
